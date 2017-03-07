@@ -1,0 +1,27 @@
+{
+  "name": "webpack-tmodjs-plugin",
+  "version": "0.1.0",
+  "description": "tmodjs plugin for webpack",
+  "scripts": {
+    "test": "cd test && webpack --verbose"
+  },
+  "keywords": [
+    "tmodjs",
+    "webpack"
+  ],
+  "author": "libo1106@foxmail.com",
+  "license": "MIT",
+  "peerDependencies": {
+    "tmodjs": "^1.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.0",
+    "tmodjs": "^1.0.4",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "loader-utils": "^1.0.3"
+  },
+  "main": "./src/plugin.js"
+}
