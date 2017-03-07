@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "tmodjs plugin for webpack",
   "scripts": {
-    "test": "cd test && webpack --verbose"
+    "test": "cd test && mocha index.test.js"
   },
   "keywords": [
     "tmodjs",

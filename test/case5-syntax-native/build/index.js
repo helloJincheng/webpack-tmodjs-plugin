@@ -1,0 +1,2 @@
+/*TMODJS:{"debug":false,"version":1,"md5":"1a3ebc9356b7c1c40cb182eecb371bd7"}*/
+define(['./template'],function(template){return template('index', '<div id="main">\n	<h3><%=title%></h3>\n	<ul>\n		<%for (var i = 0; i < list.length; i ++) {%>\n	    <li><a href="<%=list[i].url%>"><%=list[i].title%></a></li>\n	    <%}%>\n	</ul>\n</div>');});
