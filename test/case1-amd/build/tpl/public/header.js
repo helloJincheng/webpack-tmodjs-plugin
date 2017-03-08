@@ -1,4 +1,4 @@
-/*TMODJS:{"debug":false,"version":12,"md5":"3bb2497b9824d3c9c35ef0df8683587c"}*/
+/*TMODJS:{"debug":false,"version":13,"md5":"8e24d4dd0904dd8be4dbc835264f967e"}*/
 define(['../../template','./logo'],function(template){return template('tpl/public/header', function($data,$filename
 /**/) {
 'use strict';var $utils=this,$helpers=$utils.$helpers,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$out='';$out+='<!-- 头部 开始 -->\n<div id="header">\n	';

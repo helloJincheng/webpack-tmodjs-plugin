@@ -255,18 +255,18 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{}*/
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":12,"md5":"10ae5fc0c7430ae5fe883ba08db88bea"}*/
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":13,"md5":"48c3c9ec7512739ebf5554912e3eee93"}*/
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0),__webpack_require__(4),__webpack_require__(3)], __WEBPACK_AMD_DEFINE_RESULT__ = function(template){return template('tpl/index', function($data,$filename
 /**/) {
-'use strict';var $utils=this,$helpers=$utils.$helpers,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$string=$utils.$string,title=$data.title,$each=$utils.$each,list=$data.list,$value=$data.$value,$index=$data.$index,$out='';include('./public/header');
+'use strict';var $utils=this,$helpers=$utils.$helpers,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$escape=$utils.$escape,title=$data.title,$each=$utils.$each,list=$data.list,$value=$data.$value,$index=$data.$index,$out='';include('./public/header');
 $out+='\n\n<div id="main">\n	<h3>';
-$out+=$string(title);
+$out+=$escape(title);
 $out+='</h3>\n	<ul>\n		';
 $each(list,function($value,$index){
 $out+='\n	    <li><a href="';
-$out+=$string($value.url);
+$out+=$escape($value.url);
 $out+='">';
-$out+=$string($value.title);
+$out+=$escape($value.title);
 $out+='</a></li>\n	    ';
 });
 $out+='\n	</ul>\n</div>\n\n';
@@ -279,7 +279,7 @@ return new String($out);
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":12,"md5":"b25698561e59c72a4e70db160c3e897f"}*/
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":13,"md5":"39668793a769169670f40dec5b73b694"}*/
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0)], __WEBPACK_AMD_DEFINE_RESULT__ = function(template){return template('tpl/copyright', '(c) 2013');}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
@@ -287,13 +287,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":12,"md5":"e22e448810cdc3f514551eabc51e30c4"}*/
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":13,"md5":"023dc7dde034365e5b7264dd8b62196b"}*/
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0),__webpack_require__(2)], __WEBPACK_AMD_DEFINE_RESULT__ = function(template){return template('tpl/public/footer', function($data,$filename
 /**/) {
-'use strict';var $utils=this,$helpers=$utils.$helpers,time=$data.time,$string=$utils.$string,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$out='';$out+='<div id="footer">\n';
+'use strict';var $utils=this,$helpers=$utils.$helpers,time=$data.time,$escape=$utils.$escape,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$out='';$out+='<div id="footer">\n';
 if(time){
 $out+='\n	<p class=\'time\'>';
-$out+=$string(time);
+$out+=$escape(time);
 $out+='</p>\n';
 }
 $out+='\n';
@@ -307,7 +307,7 @@ return new String($out);
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":12,"md5":"3bb2497b9824d3c9c35ef0df8683587c"}*/
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":13,"md5":"8e24d4dd0904dd8be4dbc835264f967e"}*/
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0),__webpack_require__(5)], __WEBPACK_AMD_DEFINE_RESULT__ = function(template){return template('tpl/public/header', function($data,$filename
 /**/) {
 'use strict';var $utils=this,$helpers=$utils.$helpers,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$out='';$out+='<!-- 头部 开始 -->\n<div id="header">\n	';
@@ -321,7 +321,7 @@ return new String($out);
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":12,"md5":"6c9bb7ec401722917442ffd2434a08d0"}*/
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*TMODJS:{"debug":false,"version":13,"md5":"eacf17ae6e87cbd0b2683c8ce0664c2a"}*/
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0)], __WEBPACK_AMD_DEFINE_RESULT__ = function(template){return template('tpl/public/logo', '<!-- logo start -->\n<h1 id="logo">\n	<a href="http://www.qq.com">\n		<img width=\'134\' height=\'44\' src="http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png" alt="腾讯网" />\n	</a> \n</h1>\n<!-- logo end -->');}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 

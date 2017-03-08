@@ -1,3 +1,8 @@
+[![David deps][david-image]][david-url]
+
+[david-url]: https://david-dm.org/qq286735628/webpack-tmodjs-plugin
+[david-image]: https://david-dm.org/qq286735628/webpack-tmodjs-plugin.svg
+
 # 注意
 
 暂时只跑了 case1 的测试，case2 更丰富的案例还未测试过，生产环境勿用
@@ -36,15 +41,17 @@ module.exports = {
 
 ## 参数 & 默认值
 
-- base: './'
-- debug: false
-- escape: false
-- combo: false
-- minify: false
-- cache: false
-- output: './build'
-- type: 'amd'
-- charset: 'utf-8'
-- compress: false
-- syntax: 'simple'
-- helper: undefined
+参数功能请参考 https://github.com/aui/tmodjs
+
+- base: './'        模板文件源码目录
+- debug: false      
+- escape: true      过滤 xss
+- combo: false      webpack 使用的时候，不建议开启
+- minify: false     webpack 使用的时候，不建议开启
+- cache: false      编译缓存
+- output: './build' 模板编译后的输出目录
+- type: 'amd'       模块类型，改为默认 amd
+- charset: 'utf-8'  tmod 只支持 utf-8
+- compress: false   压缩 html 多余空格
+- syntax: 'simple'  语法类型
+- helper: undefined 辅助函数路径

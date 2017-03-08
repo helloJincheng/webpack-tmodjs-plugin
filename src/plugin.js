@@ -7,17 +7,17 @@ const path = require('path');
 const Tmodjs = require('tmodjs');
 
 var tmodjs_options = {
-    debug: false,
-    escape: false,
-    combo: false,
-    minify: false,
-    cache: false,
-    output: './build',
-    type: 'amd',
-    charset: 'utf-8',
-    compress: false,
-    syntax: 'simple',
-    helper: undefined
+    debug: false,       // 
+    escape: true,       // xss
+    combo: false,       // 对 defaults 类型，合并编译后代码到 runtime.js 里
+    minify: false,      // 压缩
+    cache: false,       // 编译缓存
+    output: './build',  // 编译输出目录
+    type: 'amd',        // 模块类型，改为默认 amd
+    charset: 'utf-8',   // 编码格式，tmod 只支持 utf-8
+    compress: false,    // 压缩空白字符
+    syntax: 'simple',   // 语法类型
+    helper: undefined   // 自定义辅助函数路径
 };
 
 module.exports = TmodPlugin;

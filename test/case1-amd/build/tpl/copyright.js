@@ -1,2 +1,2 @@
-/*TMODJS:{"debug":false,"version":12,"md5":"b25698561e59c72a4e70db160c3e897f"}*/
+/*TMODJS:{"debug":false,"version":13,"md5":"39668793a769169670f40dec5b73b694"}*/
 define(['../template'],function(template){return template('tpl/copyright', '(c) 2013');});

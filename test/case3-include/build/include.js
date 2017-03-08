@@ -1,2 +1,2 @@
-/*TMODJS:{"debug":false,"version":2,"md5":"b9b4beea2c31ca03bbb571c69f4fe1f9"}*/
+/*TMODJS:{"debug":false,"version":3,"md5":"f8759a676364a17e42e7e59ae442c732"}*/
 define(['./template'],function(template){return template('include', '<%include(\'./a\', {labe: \')\'})%><%include(\'./b\', {labe: \'(\'})%>\n\n<%include("./e", {include: "./v"});%>\n\n<%\n	if ("include(\'./n\')") {}\n%>\n\n<%\n	include("./d");\n	//include(\'.z\')\n	xxx.include(\'./c\')\n//include(\'./x\')%>');});
