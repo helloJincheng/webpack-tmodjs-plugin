@@ -133,34 +133,6 @@ TmodPlugin.prototype.apply = function (compiler) {
 
 }
 
-TmodPlugin.prototype._walk = function (dir) {
-
-    var plugin = this;
-    var error = false;
-    var dirList = fs.readdirSync(dir);
-    var res;
-
-    dirList.forEach(function (item) {
-
-        if (error) {
-            console.error(error);
-            return;
-        }
-
-        if (fs.statSync(path.join(dir, item)).isDirectory()) {
-
-            plugin.walk(path.join(dir, item));
-
-        } else if (filterBasename(item) && filterExtname(item)) {
-
-            plugin.tmodjs._compile(path.join(dir, item));
-
-        }
-
-    });
-
-}
-
 function mergeOptions(oldOptions, newOptions) {
 
     if (!newOptions) {
